@@ -1,0 +1,25 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Age <= 25.0\ngini = 0.828\nsamples = 16\nvalue = [3, 3, 3, 3, 2, 2]\nclass = Anime", fillcolor="#ffffff"] ;
+1 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 0, 3, 0, 0]\nclass = Phonk", fillcolor="#399de5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Age <= 31.5\ngini = 0.793\nsamples = 13\nvalue = [3, 3, 3, 0, 2, 2]\nclass = Anime", fillcolor="#ffffff"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+3 [label="gini = 0.0\nsamples = 3\nvalue = [0, 3, 0, 0, 0, 0]\nclass = Hip-Hop", fillcolor="#9de539"] ;
+2 -> 3 ;
+4 [label="Age <= 41.0\ngini = 0.74\nsamples = 10\nvalue = [3, 0, 3, 0, 2, 2]\nclass = Anime", fillcolor="#ffffff"] ;
+2 -> 4 ;
+5 [label="Age <= 35.5\ngini = 0.48\nsamples = 5\nvalue = [0, 0, 3, 0, 2, 0]\nclass = Jazz", fillcolor="#bdf6d5"] ;
+4 -> 5 ;
+6 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 2, 0]\nclass = Pop", fillcolor="#8139e5"] ;
+5 -> 6 ;
+7 [label="gini = 0.0\nsamples = 3\nvalue = [0, 0, 3, 0, 0, 0]\nclass = Jazz", fillcolor="#39e581"] ;
+5 -> 7 ;
+8 [label="Age <= 48.5\ngini = 0.48\nsamples = 5\nvalue = [3, 0, 0, 0, 0, 2]\nclass = Anime", fillcolor="#f6d5bd"] ;
+4 -> 8 ;
+9 [label="gini = 0.0\nsamples = 3\nvalue = [3, 0, 0, 0, 0, 0]\nclass = Anime", fillcolor="#e58139"] ;
+8 -> 9 ;
+10 [label="gini = 0.0\nsamples = 2\nvalue = [0, 0, 0, 0, 0, 2]\nclass = Trans", fillcolor="#e5399d"] ;
+8 -> 10 ;
+}
